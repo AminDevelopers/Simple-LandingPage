@@ -1,0 +1,497 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html, .footer__container {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+.header__container {
+  padding: 1em 5em;
+}
+.header__container .header__navbar {
+  display: flex;
+  align-items: center;
+}
+.header__container .header__navbar .header__navbar__qr {
+  font-size: 2.1rem;
+  color: black;
+  flex: 1;
+}
+.header__container .header__navbar .header__navbar__list ul {
+  list-style: none;
+  display: flex;
+}
+.header__container .header__navbar .header__navbar__list ul li {
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: nippo;
+  color: rgba(0, 0, 0, 0.74);
+  font-weight: 400;
+}
+.header__container .header__navbar .header__navbar__list ul li:first-child {
+  margin-right: 4.5em;
+}
+.header__container .header__navbar .header__navbar__list ul li:hover {
+  color: black;
+  transition: color 300ms ease-in;
+}
+.header__container .header__content {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-top: 7em;
+}
+.header__container .header__content h1 {
+  color: black;
+  font-weight: 400;
+  font-family: author;
+  font-size: 7.3rem;
+  color: rgba(0, 0, 0, 0.932);
+  text-align: left;
+}
+.header__container .header__content h1::first-letter {
+  text-transform: uppercase;
+}
+.header__container .header__content p {
+  font-family: poppins;
+  font-weight: 300;
+  width: 750px;
+  color: rgba(0, 0, 0, 0.932);
+  margin-top: 2em;
+  font-size: 1.8rem;
+  line-height: 1.35;
+}
+.header__container .header__content .header__content__btn {
+  display: flex;
+  margin-top: 2.3em;
+}
+.header__container .header__content .header__content__btn button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 0.95rem;
+  font-family: author;
+  font-weight: 500;
+  padding: 1em 2.3em;
+  border-radius: 100px;
+}
+.header__container .header__content .header__content__btn button:first-child {
+  margin-right: 3.2em;
+  background-color: rgb(194, 179, 247);
+}
+.header__container .header__content .header__content__btn button:first-child:hover {
+  background-color: rgba(194, 179, 247, 0.8);
+}
+.header__container .header__content .header__content__btn button:last-child {
+  background-color: #222;
+  color: white;
+}
+.header__container .header__content .header__content__btn button:last-child:hover {
+  background-color: rgba(22, 22, 22, 0.9);
+}
+.header__container .header__content img {
+  max-width: 100%;
+  object-fit: cover;
+  border: none;
+  outline: none;
+  margin: 7em 0;
+  border-radius: 20px;
+}
+
+.footer__container {
+  background-color: rgba(17, 17, 17, 0.9607843137);
+}
+.footer__container .footer__container__content {
+  padding: 15em 5em;
+  color: #fff;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.footer__container .footer__container__content p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: nippo;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer__container .footer__container__content p span {
+  margin-left: 1.3em;
+}
+.footer__container .footer__container__content h3 {
+  font-family: author;
+  margin-top: 1em;
+  line-height: 1;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.footer__container .footer__container__content h3::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid {
+  margin-top: 5.2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__1 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__1:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__2 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__2:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__3 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__3:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__4 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__4:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__5 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__5:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__6 {
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-radius: 15px;
+  padding: 2.4em;
+}
+.footer__container .footer__container__content .footer__card__grid .footer__card__content__6:hover p {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+.footer__container .footer__container__content .footer__card__grid ion-icon {
+  font-size: 1rem;
+  margin: 0.05em 0;
+}
+.footer__container .footer__container__content .footer__card__grid h2 {
+  font-family: nippo;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+.footer__container .footer__container__content .footer__card__grid p {
+  font-family: author;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 1.2em 0;
+}
+.footer__container .footer__container__content .footer__card__grid p::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__sections {
+  padding: 0 5em;
+  position: relative;
+  top: -315px;
+}
+.footer__container .footer__sections .footer__section__1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container .footer__sections .footer__section__1 q {
+  font-size: 2.65rem;
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: poppins;
+  margin: 0.4em 0;
+}
+.footer__container .footer__sections .footer__section__1 span {
+  font-family: nippo;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.459);
+}
+.footer__container .footer__sections .footer__section__2 {
+  color: white;
+  display: flex;
+  margin-top: 4.8em;
+  flex-direction: column;
+}
+.footer__container .footer__sections .footer__section__2 q {
+  font-size: 2.65rem;
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: poppins;
+  margin: 0.4em 0;
+}
+.footer__container .footer__sections .footer__section__2 span {
+  font-family: nippo;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.459);
+}
+.footer__container .footer__sections .footer__section__3 {
+  color: white;
+  display: flex;
+  margin-top: 4.8em;
+  flex-direction: column;
+}
+.footer__container .footer__sections .footer__section__3 q {
+  font-size: 2.65rem;
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: poppins;
+  margin: 0.4em 0;
+}
+.footer__container .footer__sections .footer__section__3 span {
+  font-family: nippo;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.459);
+}
+.footer__container .footer__subscription {
+  padding: 5em 5em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2274509804);
+}
+.footer__container .footer__subscription .footer__sub__content {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.footer__container .footer__subscription .footer__sub__content .col__1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container .footer__subscription .footer__sub__content .col__1 h3 {
+  font-weight: 400;
+  font-family: author;
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+}
+.footer__container .footer__subscription .footer__sub__content .col__1 h3::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__subscription .footer__sub__content .col__1 span {
+  font-family: author;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+}
+.footer__container .footer__subscription .footer__sub__content .col__1 span::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 {
+  display: flex;
+  flex-direction: column;
+  color: rgba(169, 169, 169, 0.473);
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 h3 {
+  font-weight: 400;
+  font-family: author;
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 h3::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 span {
+  font-family: author;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 span::first-letter {
+  text-transform: uppercase;
+}
+.footer__container .footer__subscription .footer__sub__content .col__2 button {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.3em;
+  border-radius: 50px;
+  background-color: #222;
+  color: white;
+  font-family: nippo;
+  font-weight: 400;
+  width: 25%;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
